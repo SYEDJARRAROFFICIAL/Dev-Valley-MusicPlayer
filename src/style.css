@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: black;
+    height: auto;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    animation: glow 2s ease-in-out infinite alternate;
+    width:fit-content;
+}
+@keyframes glow{
+    from{
+       filter: drop-shadow(0px 0px 15px rgb(129, 172, 129)) drop-shadow(0px 0px 15px rgb(82, 95, 82)); 
+    }
+    to{
+       filter: drop-shadow(0px 0px 15px rgba(55, 253, 144, 0.609)) drop-shadow(0px 0px 20px rgb(198, 164, 101)); 
+    }
+
+}
+.heading h1{
+    font-size: 80px;
+     background: linear-gradient(to right, rgb(41, 222, 41), rgb(246, 140, 48));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+}
+
+.heading i{
+    margin-top: 10px;
+ font-size:80px;
+ color:rgb(48, 200, 48);
+
+}
+.description-para{
+   width: 60%;
+   margin-top: 20px;
+   text-align: center;
+
+}
+.description-para p{
+    font-size: 21px;
+    color: aliceblue;
+}
+.cards{
+    margin-top: 60px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    
+}
+.playlist-card{
+    padding: 10px;
+    border: 2px solid rgb(173, 169, 169);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: aliceblue;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+.playlist-card:hover{
+    transform: translateY(-5px);
+    box-shadow:inset 5px 5px 10px 3px rgb(100, 88, 88),6px 6px 15px rgb(103, 84, 84);
+}
+.playlist-card span{
+    font-size: 30px;
+    color: gray;
+}
+.btnDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 10px 0;
+    padding: 5px;
+   height: 60px;
+   background-color: rgb(91, 210, 91);    
+   border-radius: 30px;
+   transition: 0.3s ease-in-out;
+}
+.btnDiv button{
+    background:none ;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+
+}
+.btnDiv button span{
+ margin-right: 8px;
+}
+.btnDiv:hover{
+    transform: translateY(-5px);
+    background-color: rgb(119, 242, 119);
+
+}
