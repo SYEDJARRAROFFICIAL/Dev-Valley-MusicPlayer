@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-    
+    <div class="music-container">
+        <div class="music-main">
+        <nav>
+            <h1><span>🎵 </span>Music Player</h1>
+            <div class="btnsDiv">
+           <a href="index.html"> <button>Home</button></a>
+            <button>Theme</button>
+            </div>
+        </nav>
+        <div class="main-content">
+            <div class="playlist">
+                <h1>PLAYLIST</h1>
+                <div>
+                    <div class="songs"></div>
+                </div>
+            </div>
+            <div class="music-player">
+                <h2>Now Playing</h2>
+             <div class="music-icon"> <i class="fa-solid fa-music"></i></div>
+              <div class="player">
+                <audio id="songs">
+                    <source src="./audio/Beethoven - Für Elise (Piano Version).mp3">
+                    <source src="./audio/Emil & Dariel - Happy Together (Turtles) Acoustic Cello Cover-[AudioTrimmer.com] (2).mp3">
+                    <source src="./audio/Huapango Campesino.mp3">
+                    <source src="./audio/Rondo Alla Turca- Mozart.mp3">
+                       <source src="./audio/Beethoven - Für Elise (Piano Version).mp3">
+                    <source src="./audio/Emil & Dariel - Happy Together (Turtles) Acoustic Cello Cover-[AudioTrimmer.com] (2).mp3">
+                    <source src="./audio/Huapango Campesino.mp3">
+                    <source src="./audio/Rondo Alla Turca- Mozart.mp3">
+                       <source src="./audio/Beethoven - Für Elise (Piano Version).mp3">
+                    <source src="./audio/Emil & Dariel - Happy Together (Turtles) Acoustic Cello Cover-[AudioTrimmer.com] (2).mp3">
+                    <source src="./audio/Huapango Campesino.mp3">
+                    <source src="./audio/Rondo Alla Turca- Mozart.mp3">
+                </audio>
+                <input type="range" value="0" id="progress">
+                <div  class="controls">
+                    <div id="back"><i class="fa-solid fa-backward"></i></div>
+                    <div id="play-pause"><i class="fa-solid fa-play"></i></div>
+                     <div id="forward"><i class="fa-solid fa-forward"></i></div>
+            </div>
+              </div>
+            </div>
+
+
+        </div>
+
+        </div>
+    </div>
+   <script src="./src/main.js"></script> 
 </body>
 </html>
