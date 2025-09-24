@@ -54,3 +54,4 @@ back.addEventListener("click",()=>{
 songs.addEventListener("ended",()=>{
   forward.click()
 })
+
